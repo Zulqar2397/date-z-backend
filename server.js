@@ -17,7 +17,7 @@ mongoose.connect(connectionString,{
     useUnifiedTopology:true,
 })
 //API endpoints
-app.get("/",(req,res)=> res.status(200).send("hey"));
+app.get("/",(req,res)=> res.status(200).send(process.env.PORT));
 app.get("/cards", (req,res)=>{
     const dbCard = req.body;
     Cards.find((err,data)=>{
