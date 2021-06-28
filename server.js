@@ -6,7 +6,7 @@ import Cors from 'cors'
 //App Congif
 const app = express();
 const port = process.env.PORT || 8080
-const connectionString ='mongodb+srv://admin:Zulqar2397@cluster0.7edud.mongodb.net/dateZdb?retryWrites=true&w=majority'
+const connectionString =''
 //Middleware
 app.use(express.json());
 app.use(Cors());
